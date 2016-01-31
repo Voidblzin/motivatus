@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<head>
+<meta charset="utf-8">
+<title>Hello...</title>
+<style type="text/css">
+#mainContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	background-color: #E3F0FB;
+	border-radius: 4px;
+	padding: 10px;
+	text-align: center;
+}
+.buttonStyle {
+	border-radius: 4px;
+	border: thin solid #F0E020;
+	padding: 5px;
+	background-color: #F8F094;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	color: #663300;
+	width: 75px;
+}
+
+.buttonStyle:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	color: #996633;
+	cursor: pointer;
+}
+.buttonStyle:active {
+	border: thin solid #99CC00;
+	background-color: #F5FFD2;
+	color: #669900;
+	cursor: pointer;
+}
+
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<div id="mainContent">
+<p id="helloText">?</p>
+<button id="clickButton" class="buttonStyle btn btn-info">click me</button>
+</div>
+<script> 
+var myButton = document.getElementById("clickButton");
+var myText = document.getElementById("helloText");
+
+myButton.addEventListener('click', doSomething, false)
+
+function doSomething() {
+	myText.textContent = "hello, Sir!";
+}
+</script>
+
+<!--Tab Set-up--> 
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation"  class="btn btn-default"><a href="#wall" aria-controls="home" role="tab" data-toggle="tab">Wall</a></li>
+    <li role="presentation" class="btn btn-success"><a href="#completed" aria-controls="profile" role="tab" data-toggle="tab">Completed</a></li>
+    <li role="presentation" class="btn btn-primary"><a href="#to-do" aria-controls="messages" role="tab" data-toggle="tab">To-Do</a></li>
+    <li role="presentation" class="btn btn-danger"><a href="#tardy" aria-controls="settings" role="tab" data-toggle="tab">Tardy</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="wall">
+    Where all your collegues see your progress and decide to judge you.
+    </div>
+    <div role="tabpanel" class="tab-pane" id="completed"> Where you see where you went well
+     <ul>
+          <li> Earth Science Honors Research Paper</li>
+          <li> Intro into Computer Science Questions</li>
+          <li> Annotated Biblography</li>
+      </ul> </div>
+    <div role="tabpanel" class="tab-pane" id="to-do"> Where you see what other assignments you have to waste your time on. :D </div>
+    <div role="tabpanel" class="tab-pane" id="tardy"> What were you doing again?!??!?! PROCRASTINATING!!!</div>
+  </div>
+
+</div>
+<!--Tab Set-up end-->
+
+
+</body>
+</html>
