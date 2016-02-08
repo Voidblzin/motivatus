@@ -14,7 +14,10 @@ var userAnswer = prompt("Are you a new user?");
                                                     if (userAnswer7 == "12"){
                                                         var userAnswer8 = prompt("What is your GPA?");
                                                             if (userAnswer8 == "3.9"){
-                                                                confirm("Yay!!! You have signed into MotivatUS!");
+                                                               if  (confirm("Yay!!! You have signed into MotivatUS!")) {
+                                                                   window.location.href = 'https://preview.c9users.io/honorsprogramguy/motivatus/index.html?_c9_id=livepreview20&_c9_host=https://ide.c9.io';
+                                                               }
+                                                              
                                                             }
                                                     }
                                             }
@@ -25,5 +28,7 @@ var userAnswer = prompt("Are you a new user?");
             }
 }
     else{
-        confirm("Welcome back!!!")
+        if (confirm("Welcome back!!!")) {
+            window.location.href = 'https://preview.c9users.io/honorsprogramguy/motivatus/index.html?_c9_id=livepreview20&_c9_host=https://ide.c9.io';
+        }
     } 

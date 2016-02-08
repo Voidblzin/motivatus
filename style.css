@@ -13,7 +13,7 @@ H1 {text-align:center; color:black; font: normal 150pt "fantasy"}
 
 
 .jumbotron {
-    background-image: url('http://blog.clarity.fm/wp-content/uploads/2012/11/happy-friends-e1352836928774.jpg');
+    background-image: url('http://i.huffpost.com/gen/813511/images/o-FRIENDSHIP-facebook.jpg');
   height: 510px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,8 +31,17 @@ H1 {text-align:center; color:black; font: normal 150pt "fantasy"}
   font-weight: bold;
 }
 
+marquee {
+  
+  margin-top: 60px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .jumbotron p {
   font-size: 20px;
   color: #fff;
 }
 a:link    {color:black; background-color:transparent; text-decoration:none}
+
+

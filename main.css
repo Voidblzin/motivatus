@@ -1,0 +1,21 @@
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 24px;
+}
+
+
+.jumbotron {
+    height: 500px;
+}
+
+.jumbotron h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.jumbotron p{
+    color: #fff;
+    font-size: 20px;
+}
